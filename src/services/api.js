@@ -9,7 +9,7 @@ export const generateInvoice = async (invoiceData) => {
     console.log('Received response from backend');
     return response.data;
   } catch (error) {
-    console.error('Error in API call:', error);
+    console.error('Error in API call:', error.message);
     throw error;
   }
 };
