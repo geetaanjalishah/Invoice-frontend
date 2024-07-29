@@ -3,7 +3,7 @@ import axios from 'axios';
 export const generateInvoice = async (invoiceData) => {
   try {
     console.log('Sending request to backend with data:', invoiceData);
-    const response = await axios.post('http://localhost:5000/api/invoices/generate', invoiceData, {
+    const response = await axios.post('https://invoice-backend-z1cv.onrender.com', invoiceData, {
       responseType: 'blob',
     });
     console.log('Received response from backend');
